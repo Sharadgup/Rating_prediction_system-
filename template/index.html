@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Rating Prediction</title>
+</head>
+
+<body>
+    <h1>Restaurant Rating Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="rating_color">Select rating color:</label>
+        <select id="rating_color" name="rating_color">
+            <option value="Green">Green</option>
+            <option value="Red">Red</option>
+        </select>
+        <br><br>
+        <label for="has_table_booking">Has table booking?</label>
+        <select id="has_table_booking" name="has_table_booking">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <br><br>
+        <label for="has_online_delivery">Has online delivery?</label>
+        <select id="has_online_delivery" name="has_online_delivery">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <br><br>
+        <label for="locality">Enter locality:</label>
+        <input type="text" id="locality" name="locality">
+        <br><br>
+        <label for="city">Enter city:</label>
+        <input type="text" id="city" name="city">
+        <br><br>
+        <input type="submit" value="Predict Rating">
+    </form>
+</body>
+
+</html>
